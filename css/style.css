@@ -1,0 +1,129 @@
+/*=========================================*/
+            /*Base Elements Style*/
+/*=========================================*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+}
+
+h2,
+h4 {
+    text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p,h1,h2,h3,h4,h5,a {
+    color: #00b51a;
+}
+
+
+/*=========================================*/
+                /*NAVBAR*/
+/*=========================================*/
+
+.name {
+	margin: 0;
+    
+}
+.main-nav {
+	margin-top: 5px;
+}
+.main-nav li {
+    margin-right: 20px;   
+}
+.name a,
+.main-nav a {
+    text-decoration: none;
+    font-size: 20px;
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+.main-nav a {
+	color: #0074D9
+	text-transform: uppercase;
+}
+
+/*=========================================*/
+                /*JUMBOTRON*/
+/*=========================================*/
+
+
+.jumbotron {
+    padding-top: 350px;
+    padding-bottom: 350px;
+    background: linear-gradient(#000, transparent 10%),
+                linear-gradient(0deg, #000, transparent 5%),
+                #222 url(../img/jumbo.jpeg);
+    background-size: 100% 100%; 
+    border-radius: 20px;
+}
+
+.header-nav {
+    color: #0074D9;
+    margin-left: 70px;
+    padding: 0px;
+}
+
+.header-nav h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.header-nav p {
+    font-size: 40px;
+    margin-left: 250px;
+}
+
+.header-nav h1,
+.header-nav p {
+    font-weight: bold;
+     text-shadow: 0 1px 0 #222,
+               0 2px 0 #222,
+               0 3px 0 #222,
+               0 4px 0 #222,
+               0 5px 0 #222,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+/*=========================================*/
+                /*Media Quaries*/
+/*=========================================*/
+
+@media (min-width: 769px) {
+
+    
+	.main-header,
+	.main-nav {
+		display: flex;
+	}
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+}
+
+@media (min-width: 1025px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
