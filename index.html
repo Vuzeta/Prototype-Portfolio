@@ -112,20 +112,30 @@
     <section id="contact">
         <h1 class="admission">Kontakt</h1>
         <div class="main-contact">
-            <div class="col send">
+            <div class="send">
             <h2>Mateusz Machnik</h2>
                         <p>tel: 506 354 088</p>
                         <p>e-mail:<a href="mailto:machnio95@o2.pl"> machnio95@o2.pl</a></p>
             </div>
-             <div class="col send">
-                    <form target="_blank" action="https://formspree.io/machnio95@o2.pl" method="post"><br>
-                        <input class="form-control" type="text" name="name" placeholder="Imię i Nazwisko"><br>
-                        <input class="form-control" placeholder="Adres e-mail" name="email"><br>
-                        <textarea class="form-control" name="message" placeholder="Wiadomość"></textarea><br>
-                        <input class="btn" type="submit" name="submit" value="Wyślij"><br>
-                    </form>
-                </div>
-    </div>
+             <div class="send">
+                 <form target="_blank" action="https://formspree.io/machnio95@o2.pl" method="post">
+                     <h3>Napisz do Mnie</h3>
+                     <h4>Najcześciej odpisuje w ciągu 24 godzin.</h4>
+                     <fieldset>
+                         <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                     </fieldset>
+                     <fieldset>
+                         <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                     </fieldset>
+                     <fieldset>
+                         <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                     </fieldset>
+                     <fieldset>
+                         <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                     </fieldset>
+                 </form>
+            </div>
+        </div>
     </section>
         
     <footer>
