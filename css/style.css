@@ -54,25 +54,22 @@ p {
 
 
 .name {
-	font-size: 25px;
-	margin: 0;
+    font-size: 25px;
+    margin: 0;
 }
 .main-nav {
-	margin-top: 5px;
+    margin-top: 5px;
 }
 .name a,
 .main-nav a {
-	text-align: center;
-	display: block;
-	padding: 10px 15px;
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
 }
 .main-nav a {
-	font-size: 18px;
-	text-transform: uppercase;
+    font-size: 18px;
+    text-transform: uppercase;
 }
-
-
-
 
 
 /*=========================================*/
@@ -114,7 +111,7 @@ p {
                  0 5px 10px rgba(0,0,0,.25),
                  0 10px 10px rgba(0,0,0,.2),
                  0 20px 20px rgba(0,0,0,.15);
-    }
+}
 
 
 
@@ -142,8 +139,8 @@ p {
     text-align: center;
 }
 
-.container img,
-.container p {
+.main-about img,
+.main-about p {
     margin: 20px 0;
 }
 
@@ -178,23 +175,48 @@ p {
 
 #projects .admission {
     margin-top: 50px;
-    margin-bottom: -30px;
+    margin-bottom: -5px;
 }
 
 /*=========================================*/
                 /*CONTACT*/
 /*=========================================*/
 
-.main-contact {
+.main-contact .col {
     display: block;
     text-align: center;
 }
 
+.btn,
+.form-control {
+    background-color: #a6c1c9;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
 
+input[type="submit"] {
+    background-color: #ce392f;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
 
+input[type="submit"]:hover {
+    cursor: pointer;
+    color: #ce392f;
+    background-color: #fff;
+}
 
+/*=========================================*/
+                /*FOOTER*/
+/*=========================================*/
 
-
+footer p {
+    padding-top: 20px;
+    margin-left: 25px;
+}
 
 
 /*=========================================*/
@@ -216,14 +238,15 @@ p {
     
     .main-header,
     .main-nav,
-    .container,
+    .main-about,
     .main-skills,
-    .main-contact {
+    .main-contact
+    {
         display: flex;
         
     }
     
-    /*    navbar    */
+    /*    NAVBAR   */
     
     .main-header {
         flex-direction: column;
@@ -242,20 +265,20 @@ p {
     .banner h1 {
         font-size: 40px;
         margin-left: 30px;
-}
+    }
 
     .banner p {
         font-size: 35px;
         margin-left: 150px;
-}
+    }
     
-    /*    About    */
+    /*    ABOUT    */
     
-    .container {
+    .main-about {
         align-items: center;
     }
     
-    .container p {
+    .main-about p {
         margin-top: -30px;
     }
     
@@ -270,7 +293,7 @@ p {
         font-size: 17px;
     }
     
-    .container,
+    .main-about,
     .main-skills {
         flex-wrap: wrap;
     }
@@ -279,13 +302,13 @@ p {
         margin-left: -20px;
     }
     
+    /*    SKILLS    */
     
     .main-skills .col,
     .main-contact {
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
     }
-
 }
 
 
@@ -306,7 +329,7 @@ p {
         margin-bottom: 50px;
     }
     
-    /*    navbar   */
+    /*    NAVBAR   */
     
     .main-header {
         flex-direction: row;
@@ -347,10 +370,15 @@ p {
         margin-left: 260px;
     }
     
-    /*    About    */
+    /*    ABOUT    */
     
     .col {
         flex-basis: 0;
+    }
+    
+    .secondary,
+    .tertiary {
+        justify-content: center;
     }
     
     .secondary {
@@ -362,6 +390,8 @@ p {
         margin-right: 30px;
     }
     
+    /*    SKILLS    */
+    
     .main-skills .col {
         flex: 1 20%;
         align-items: center;
@@ -371,12 +401,10 @@ p {
         font-size: 20px;
     }
     
+    /*    PROJECTS    */
+    
     .github {
         background-size: 50% 80%;
-    }
-    
-    .main-contact .col {
-        margin: 40px -100px;
     }
 }
 
