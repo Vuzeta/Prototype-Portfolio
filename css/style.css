@@ -27,6 +27,10 @@ p {
     text-decoration: none;
 }
 
+.col p {
+    font-size: 19px;
+}
+
 
 /*=========================================*/
                 /*NAVBAR*/
@@ -34,7 +38,7 @@ p {
 
 
 .name {
-	font-size: 1.35em;
+	font-size: 25px;
 	margin: 0;
 }
 .main-nav {
@@ -47,7 +51,7 @@ p {
 	padding: 10px 15px;
 }
 .main-nav a {
-	font-size: .95em;
+	font-size: 18px;
 	text-transform: uppercase;
 }
 
@@ -109,7 +113,7 @@ p {
 
 .admission {
     text-align: center;
-    font-size: 1.35em;
+    font-size: 40px;
     margin: 25px 0;
 }
 
@@ -128,6 +132,43 @@ p {
 }
 
 
+/*=========================================*/
+                /*SKILLS*/
+/*=========================================*/
+
+.main-skills {
+    display:block;
+    text-align: center;
+}
+
+.col {
+    margin-top: 40px;
+}
+
+/*=========================================*/
+                /*PROJECTS*/
+/*=========================================*/
+
+.github {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(#000, transparent 10%),
+                      linear-gradient(0deg, #000, transparent 5%),
+                      url(../img/github.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+#projects .admission {
+    margin-top: 50px;
+    margin-bottom: -30px;
+}
+
+
+
+
+
 
 
 
@@ -140,9 +181,18 @@ p {
     
     /*    BASIC   */
     
+    .name {
+	   font-size: 40px;
+	   margin: 0;
+    }
+    .main-nav a {
+	   font-size: 20px;
+    }
+    
     .main-header,
     .main-nav,
-    .container{
+    .container,
+    .main-skills {
         display: flex;
         
     }
@@ -186,7 +236,12 @@ p {
         flex: 1 33%;
     }
     
-    .container {
+    .col p {
+        font-size: 17px;
+    }
+    
+    .container,
+    .main-skills {
         flex-wrap: wrap;
     }
     
@@ -194,14 +249,29 @@ p {
         margin-left: -20px;
     }
     
+    
+    .main-skills .col {
+        flex-direction: row;
+        align-items: center;
+    }
+
 }
+
 
 
 @media (min-width: 1025px) {
     
     /*    BASIC   */
+    .name {
+	   font-size: 30px;
+	   margin: 0;
+    }
+    .main-nav a {
+	   font-size: 18px;
+    }
+    
     .admission {
-        font-size: 30px;
+        font-size: 40px;
         margin-bottom: 50px;
     }
     
@@ -257,6 +327,19 @@ p {
     
     .tertiary {
         margin-right: 30px;
+    }
+    
+    .main-skills .col {
+        flex: 1 20%;
+        align-items: center;
+    }
+    
+    .col p {
+        font-size: 20px;
+    }
+    
+    .github {
+        background-size: 50% 80%;
     }
 }
 
