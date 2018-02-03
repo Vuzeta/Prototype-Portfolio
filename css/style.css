@@ -12,6 +12,22 @@ body {
     background-color: black;
 }
 
+input,
+textarea {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+textarea {
+    height: 150px;
+    width: 400px;
+    resize: none;
+}
+
+
+
+
 ul {
   margin: 0;
   padding: 0;
@@ -165,6 +181,15 @@ p {
     margin-bottom: -30px;
 }
 
+/*=========================================*/
+                /*CONTACT*/
+/*=========================================*/
+
+.main-contact {
+    display: block;
+    text-align: center;
+}
+
 
 
 
@@ -192,7 +217,8 @@ p {
     .main-header,
     .main-nav,
     .container,
-    .main-skills {
+    .main-skills,
+    .main-contact {
         display: flex;
         
     }
@@ -254,7 +280,8 @@ p {
     }
     
     
-    .main-skills .col {
+    .main-skills .col,
+    .main-contact {
         flex-direction: row;
         align-items: center;
     }
@@ -346,6 +373,10 @@ p {
     
     .github {
         background-size: 50% 80%;
+    }
+    
+    .main-contact .col {
+        margin: 40px -100px;
     }
 }
 
