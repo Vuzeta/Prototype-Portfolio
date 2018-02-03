@@ -64,8 +64,8 @@ p {
 /*=========================================*/
 
 .banner {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     background-image: linear-gradient(#000, transparent 10%),
                       linear-gradient(0deg, #000, transparent 5%),
                       url(../img/jumbo.jpeg);
@@ -229,6 +229,10 @@ p {
         align-items: center;
     }
     
+    .container p {
+        margin-top: -30px;
+    }
+    
     .col {
         margin-left: 10px;
         margin-right: 10px;
@@ -294,6 +298,8 @@ p {
     /*    BANNER   */
     
     .banner {
+        padding-top: 200px;
+        padding-bottom: 200px;
         background: linear-gradient(#000, transparent 10%),
                     linear-gradient(0deg, #000, transparent 5%),
                     url(../img/jumbo.jpeg);
