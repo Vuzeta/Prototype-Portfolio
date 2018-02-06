@@ -7,9 +7,8 @@
 
 body {
     margin: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Black Ops One', cursive, sans-serif;
     line-height: 1.6;
-    background-color: black;
 }
 
 input,
@@ -34,17 +33,35 @@ ul {
   list-style: none;
 }
 
+.col p {
+    font-size: 19px;
+}
+
+/*COLORS*/
+
+body {
+    background-color: #F2A30F;
+}
 
 h1,
-h2,
+h2 {
+    color: #2474A6;
+}
+
 a,
 p {
-    color: #00b51a;
+    color: black;
     text-decoration: none;
 }
 
-.col p {
-    font-size: 19px;
+.banner p,
+.banner h1 {
+    color: #F2A30F;
+}
+
+.main-header h1,
+.main-header a {
+    color: #1A2A40;
 }
 
 
@@ -79,8 +96,8 @@ p {
 .banner {
     padding-top: 150px;
     padding-bottom: 150px;
-    background-image: linear-gradient(#000, transparent 10%),
-                      linear-gradient(0deg, #000, transparent 5%),
+    background-image: linear-gradient(#F2A30F, transparent 10%),
+                      linear-gradient(0deg, #F2A30F, transparent 5%),
                       url(../img/jumbo.jpeg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -165,8 +182,10 @@ p {
 .github {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(#000, transparent 10%),
-                      linear-gradient(0deg, #000, transparent 5%),
+    background-image: linear-gradient(#F2A30F, transparent 5%),
+                      linear-gradient(0deg, #F2A30F, transparent 5%),
+                      linear-gradient(90deg, #F2A30F, transparent 5%),
+                      linear-gradient(270deg, #F2A30F, transparent 5%),
                       url(../img/github.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -195,26 +214,26 @@ p {
 #contact input[type="email"],
 #contact textarea,
 #contact button[type="submit"] {
-    font: 400 20px 'Lato', sans-serif;
+    font: 400 20px 'Black Ops One', cursive, sans-serif;
     border-radius: 5px;
 }
 
 #contact form {
-	background: black;
+	background: #F2A30F;
 	padding:0;
 	margin:0 20px;
     text-align: center;
 }
 
 #contact h3 {
-	color: #00b51a;
+	color: #E00B27;
 	display: block;
 	font-size: 30px;
 	font-weight: 400;
 }
 
 #contact h4 {
-    color: #00b51a;
+    color: #E00B27;
 	margin:5px 0 15px;
 	display:block;
 	font-size:17px;
@@ -232,8 +251,8 @@ fieldset {
 #contact input[type="email"],
 #contact textarea {
     width:100%;
-	border:1px solid #CCC;
-	background:#FFF;
+	border:1px solid #EBF4F7;
+	background:#2474A6;
 	margin:0 0 5px;
 	padding:10px;
 }
@@ -244,20 +263,20 @@ fieldset {
 	-webkit-transition:border-color 0.3s ease-in-out;
 	-moz-transition:border-color 0.3s ease-in-out;
 	transition:border-color 0.3s ease-in-out;
-	border:1px solid #AAA;
+	border:1px solid #E00B27;
 }
 
 #contact textarea {
 	height:100px;
 	max-width:100%;
-  resize:none;
+    resize:none;
 }
 
 #contact button[type="submit"] {
 	cursor:pointer;
 	width:100%;
 	border:none;
-	background:#00b51a;
+	background: #2474A6;
 	color:#FFF;
 	margin:0 0 5px;
 	padding:10px;
@@ -265,7 +284,7 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-	background:#09C;
+	background:#E00B27;
 	-webkit-transition:background 0.3s ease-in-out;
 	-moz-transition:background 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
@@ -281,16 +300,26 @@ fieldset {
 }
 
 ::-webkit-input-placeholder {
- color:#888;
+ color:#EBF4F7;
 }
 :-moz-placeholder {
- color:#888;
+ color:#EBF4F7;
 }
 ::-moz-placeholder {
- color:#888;
+ color:#EBF4F7;
 }
 :-ms-input-placeholder {
- color:#888;
+ color:#EBF4F7;
+}
+
+#contact img {
+    margin: 10px;
+}
+
+#contact img:hover {
+    transition:border-color 0.3s ease-in-out;
+    border-radius: 50%;
+    border: 3px solid #2474A6;
 }
 
 /*=========================================*/
@@ -340,8 +369,8 @@ footer p {
     /*    BANNER   */
     
     .banner {
-        background: linear-gradient(#000, transparent 10%),
-                    linear-gradient(0deg, #000, transparent 5%),
+        background: linear-gradient(#F2A30F, transparent 10%),
+                    linear-gradient(0deg, #F2A30F, transparent 5%),
                     url(../img/jumbo.jpeg);
         background-size: 100% 100%;
     }
@@ -443,8 +472,8 @@ footer p {
     .banner {
         padding-top: 200px;
         padding-bottom: 200px;
-        background: linear-gradient(#000, transparent 10%),
-                    linear-gradient(0deg, #000, transparent 5%),
+        background: linear-gradient(#F2A30F, transparent 10%),
+                    linear-gradient(0deg, #F2A30F, transparent 5%),
                     url(../img/jumbo.jpeg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
