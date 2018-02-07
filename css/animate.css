@@ -859,7 +859,7 @@
   }
 }
 
-.animated.flip {
+.animated.flip:hover {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   animation-name: flip;
