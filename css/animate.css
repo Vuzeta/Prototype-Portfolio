@@ -84,8 +84,9 @@
   }
 }
 
-.pulse {
-  animation-name: pulse;
+.pulse:hover {
+    animation: pulse 1s alternate;    
+    animation-name: pulse;
 }
 
 @keyframes rubberBand {
