@@ -50,10 +50,6 @@ ul {
 
 /*COLORS*/
 
-body {
-    background-color: #F2A30F;
-}
-
 h1,
 h2 {
     color: #2474A6;
@@ -75,6 +71,7 @@ p {
 .main-header a {
     color: #222;
 }
+
 
 
 /*=========================================*/
@@ -105,28 +102,15 @@ p {
                 /*HEADER*/
 /*=========================================*/
 
-.banner {
-    padding-top: 150px;
-    padding-bottom: 150px;
-    background-image: linear-gradient(#F2A30F, transparent 10%),
-                      linear-gradient(0deg, #F2A30F, transparent 5%),
-                      url(../img/jumbo.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+#main-banner {
+    margin-top: 0;
+    margin-bottom: 100px;
 }
 
-.banner h1 {
-    font-size: 30px;
-    margin-left: 30px;
-}
-
-.banner p {
-    font-size: 25px;
-    margin-left: 50px;
-}
-
-.banner h1,
-.banner p {
+#main-banner h1,
+#main-banner p {
+    font-size: 50px;
+    text-align: center;
     font-weight: bold;
     text-shadow: 0 1px 0 #222,
                  0 2px 0 #222,
@@ -481,16 +465,10 @@ footer p {
     
     /*    BANNER   */
     
-    .banner {
-        padding-top: 200px;
+    #main-banner {
+        padding-top: 150px;
         padding-bottom: 200px;
-        background: linear-gradient(#F2A30F, transparent 10%),
-                    linear-gradient(0deg, #F2A30F, transparent 5%),
-                    url(../img/jumbo.jpeg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
         margin:0;
-        padding-top: 400px;
         padding-bottom: 400px;
     }
 
@@ -528,12 +506,14 @@ footer p {
     
     
 #section03 a {
-  padding-top: 60px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 90px;
     visibility: visible;
 }
 #section03 a span {
   position: absolute;
-  top: 0;
+  top: 100%;
   left: 50%;
   width: 46px;
   height: 46px;

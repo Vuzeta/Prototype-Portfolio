@@ -836,7 +836,7 @@
 @keyframes flip {
   from {
     transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-out; 
   }
 
   40% {
@@ -860,10 +860,11 @@
   }
 }
 
-.animated.flip:hover {
+.animated.flip {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   animation-name: flip;
+    
 }
 
 @keyframes flipInX {
