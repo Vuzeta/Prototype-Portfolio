@@ -46,6 +46,14 @@ p {
     text-decoration: none;
 }
 
+#about,
+#skills,
+#projects,
+#contact {
+    margin-bottom: 150px;
+}
+
+
 /*=========================================*/
             /*FONTS & COLORS*/
 /*=========================================*/
@@ -54,6 +62,7 @@ p {
 .name {
     font-family: 'Open Sans', sans-serif;
     font-size: 35px;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 
 .name a {
@@ -63,6 +72,13 @@ p {
 }
 
 .main-header {
+    background-color: #222;
+    opacity: 1;
+    z-index: 1;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.bg-black {
     background-color: #222;
     opacity: 0.75;
 }
@@ -75,9 +91,14 @@ p {
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
 #main-banner h1,
 .main-skills h2,
-#main-banner p {
+#main-banner p,
+#projects h2 {
     color: #fff;
     text-align: center;
 }
@@ -124,9 +145,19 @@ p {
     font-size: 25px;
 }
 
-.main-skills p {
+.main-skills p,
+#projects p {
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
+}
+
+#projects .github {
+    text-decoration: none;
+}
+
+.main-skills h2,
+#projects h2 {
+    text-decoration: underline;
 }
 
 .send {
@@ -135,13 +166,19 @@ p {
     font-weight: 600;
 }
 
+#contact h2,
+#contact h3{
+    color: #E00B27
+}
+
+#contact h4{ 
+    color: #fff; 
+}
+
 #contact h3,
 #contact h4 {
     font-family: 'Oswald', sans-serif;
-}
-
-#contact h4 {
-    color: #E00B27
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 
 #contact input[type="text"],
@@ -152,6 +189,7 @@ p {
     font-size: 20px;
     font-weight: 600;
 }
+
 
 /*=========================================*/
                 /*NAVBAR*/
@@ -253,22 +291,13 @@ p {
                 /*PROJECTS*/
 /*=========================================*/
 
-.github {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-image: linear-gradient(#F2A30F, transparent 5%),
-                      linear-gradient(0deg, #F2A30F, transparent 5%),
-                      linear-gradient(90deg, #F2A30F, transparent 5%),
-                      linear-gradient(270deg, #F2A30F, transparent 5%),
-                      url(../img/github.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
+#projects {
+        display: block;
+        text-align: center;
 }
 
-#projects .admission {
-    margin-top: 50px;
-    margin-bottom: -5px;
+.proj {
+    box-shadow: -9px 14px 15px 3px rgba(0,0,0,0.72);
 }
 
 /*=========================================*/
@@ -401,10 +430,6 @@ footer p {
 }
 
 
-
-
-
-
 /*=========================================*/
                 /*Media Quaries*/
 /*=========================================*/
@@ -426,7 +451,8 @@ footer p {
     .main-nav,
     .main-about,
     .main-skills,
-    .main-contact
+    .main-contact,
+    .main-projects
     {
         display: flex;
         
@@ -441,21 +467,10 @@ footer p {
     
     /*    BANNER   */
     
-    .banner {
-        background: linear-gradient(#F2A30F, transparent 10%),
-                    linear-gradient(0deg, #F2A30F, transparent 5%),
-                    url(../img/jumbo.jpeg);
-        background-size: 100% 100%;
-    }
-    
-    .banner h1 {
-        font-size: 40px;
-        margin-left: 30px;
-    }
-
-    .banner p {
-        font-size: 35px;
-        margin-left: 150px;
+    #main-banner {
+        margin-top: 200px;
+        margin-bottom: 200px;
+        
     }
     
     /*    ABOUT    */
@@ -489,7 +504,8 @@ footer p {
     }
     
     .main-about,
-    .main-skills {
+    .main-skills,
+    .main-projects {
         flex-wrap: wrap;
     }
     
@@ -529,13 +545,20 @@ footer p {
     .main-header {
         flex-direction: row;
         justify-content: space-between;
+        padding-top: 35px;
+        padding-bottom: 35px;
     }
     
     .main-nav {
         margin-right: 50px;
     }
     
+    .main-nav a {
+        font-size: 25px;
+    }
+    
     .main-header h1 {
+        font-size: 40px;
         margin-left: 50px;
     }
     
@@ -581,6 +604,9 @@ footer p {
     
     
     
+    #section03 {
+        text-align: center;
+    }
     
 #section03 a {
     text-align: center;
@@ -659,25 +685,11 @@ footer p {
   }
 }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     /*    ABOUT    */
+    
+    #about p {
+        font-size: 25px;
+    }
     
     .col {
         flex-basis: 0;
@@ -702,6 +714,11 @@ footer p {
     .main-skills .col {
         flex: 1 20%;
         align-items: center;
+    }
+    
+    .main-projects .col {
+        flex: 1 25%;
+        
     }
     
     .col p {

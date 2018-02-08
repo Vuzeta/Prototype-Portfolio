@@ -119,7 +119,7 @@
   }
 }
 
-.rubberBand {
+.rubberBand:hover {
   animation-name: rubberBand;
 }
 
