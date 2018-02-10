@@ -416,11 +416,11 @@ fieldset {
 
 #contact img {
     margin: 10px;
+    border-radius: 50%;
 }
 
 #contact img:hover {
-    transition:border-color 0.3s ease-in-out;
-    border-radius: 50%;
+    transition-duration: .3s;
     border: 3px solid #E00B27;
 }
 
@@ -565,8 +565,6 @@ footer p {
         font-size: 40px;
         margin-left: 50px;
     }
-    
-    /*STICKY NAVBAR*/
     
     /*    BANNER   */
     
@@ -803,72 +801,9 @@ footer p {
     
     /*    SCROLL*/
     
-:after,
-.scroll-down:before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-    
-.scroll-down {
-  opacity: 1;
-  -webkit-transition: all .5s ease-in 3s;
-  transition: all .5s ease-in 3s;
-}
-
-.scroll-down {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  margin-left: -16px;
-  display: block;
-  width: 32px;
-  height: 32px;
-  border: 2px solid #FFF;
-  background-size: 14px auto;
-  border-radius: 50%;
-  z-index: 2;
-  -webkit-animation: bounce 2s infinite 2s;
-  animation: bounce 2s infinite 2s;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
-  transform: scale(1)
-}
-
-.scroll-down:before {
-    position: absolute;
-    top: calc(50% - 8px);
-    left: calc(50% - 6px);
-    transform: rotate(-46deg);
-    display: block;
-    width: 13px;
-    height: 13px;
-    content: "";
-    border: 2px solid white;
-    border-width: 0px 0 2px 2px;
-}
-
-@keyframes bounce {
-  0%,
-  100%,
-  20%,
-  50%,
-  80% {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  60% {
-    -webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
-}
+    .scroll-down {
+        top: 90%;
+    }
     
     /*    ABOUT    */
     
@@ -878,7 +813,7 @@ footer p {
     
     #about {
         padding-top:120px;
-        padding-bottom:120px;
+        padding-bottom:150px;
     }
     
     #about img {
@@ -930,14 +865,20 @@ footer p {
     
     /*    SKILLS    */
     
+    
+    #skills {
+        padding-bottom:400px;
+    }
+    
     .main-skills .col {
         flex: 1 20%;
         align-items: center;
+        margin-top: 100px;
     }
     
     .main-projects .col {
         flex: 1 25%;
-        
+        margin-top: 20px;
     }
     
     .col p {
@@ -946,15 +887,61 @@ footer p {
     
     /*    PROJECTS    */
     
-    .github {
-        background-size: 50% 80%;
+    #contact {
+        margin-top: -80px;
+        padding-bottom:30px;
     }
     
-    #contact {
-        padding-top:120px;
-        padding-bottom:160px;
+    #contact .first {
+        margin-top: 250px;
     }
-}
+    
+    #contact .second {
+        margin-top: 200px;
+        padding-right: 30px;
+    }
+    
+    .first {
+        font-size: 30px;
+    }
+    
+    #contact .name {
+        font-size: 40px;
+    }
+    
+    #contact img {
+        width: 70px;
+        height: 70px;     
+    }
+    
+    #contact img:hover {
+        border: 6px solid #E00B27;
+        border-radius: 50%;
+    }
+    
+    #contact h3 {
+        font-size: 50px;
+    }
+    
+     #contact h4 {
+        font-size: 35px;
+    }
+    
+    input {
+        height: 70px
+    }
+    
+    #contact button {
+        height: 70px;
+    }
+    
+    #main-banner h1 {
+        font-size: 100px;
+    }
+    
+     #main-banner p {
+        font-size: 50px;
+    }
 }
 
 
