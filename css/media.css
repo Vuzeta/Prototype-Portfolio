@@ -1,6 +1,90 @@
 @import url(style.css);
 
-@media (min-width: 768px) and (max-width: 1224px) {
+
+
+/*SMARTFONS Landscape */
+
+@media (min-width : 321px) and (orientation : landscape) {
+
+    /*HEADER*/
+    
+    .main-header {
+        height: 360px;
+    }
+    
+    .main-nav {
+        font-size: 20px;
+    }
+    
+    .main-header h1 {
+        font-size: 28px;
+        margin: 10px;
+    }
+    
+    .main-nav li {
+        margin-top: 50px;
+    }
+    
+    /*BANNER*/
+    
+    .bg-black {
+        background-color: #222;
+        opacity: 1;
+    }
+    
+    #main-banner {
+        height: 260px;
+    }
+    
+    #main-banner h1 {
+        margin-top: 100px;
+        font-size: 50px;
+    }
+    
+    #main-banner p {
+        font
+    }
+    
+    /*ABOUT*/
+    
+    #about {
+        height: 800px;
+        
+    }
+            /*---------------> myPhoto <-------------------*/
+                .myphoto {
+                    height: 270px;
+                    width: 200px;
+                }
+
+                .box-shadow {
+                    position: relative;
+                    display: inline-block;
+                    height: 330px;
+                    width: 260px;
+                    margin-left: 30px;
+                }
+
+            /*----------------------------------------------*/
+    
+    /*SKILLS*/
+    
+    #skills {
+        height: 2600px;
+    }
+    
+    /*PROJECTS*/
+    
+    #projects {
+        height: 2700px;
+    }                
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+
+
+@media (min-width: 768px) {
     
     
     .main-header,
@@ -16,7 +100,7 @@
     /*HEADER*/
     
     .main-nav {
-        font-size: 30px;
+        font-size: 28px;
     }
     
     .main-nav li {
@@ -119,6 +203,7 @@
     }
 }
 
+/* Desktops and laptops ----------- */
 
 @media (min-width : 1224px) {
     
@@ -358,6 +443,8 @@
     #contact h3 {
         font-size: 25px;
     }
+    
+/* Large screens ----------- */
     
 @media (min-width : 1824px) {
         
