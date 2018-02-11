@@ -86,6 +86,10 @@ h3 {
     text-transform: uppercase;
 }
 
+.main-nav .active {
+    color: #E00B27;
+}
+
 .main-header h1 {
     font-size: 48px;
     margin: 0 10px;
