@@ -29,7 +29,7 @@ ul {
     font-size: 40px;
     color: #E00B27;
     background-color: #222;
-    opacity: 0.75;
+    opacity: 0.6;
 }
 
 #video-background {
@@ -51,7 +51,7 @@ ul {
 p,
 h2,
 h3 {
-    font-family: 'Oswald', sans-serif;;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
 
