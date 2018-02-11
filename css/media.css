@@ -124,6 +124,14 @@
     
     /*BASIC*/
     
+    .sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 500;
+    }
+    
     .admission {
         font-size: 55px;
     }
@@ -134,13 +142,17 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        height: 150px;  
+        height: 45px;  
         align-items: center;
         padding: 0 20px;
     }
     
     .main-header h1 {
-        font-size: 50px;
+        font-size: 25px;
+    }
+    
+        .main-nav a {
+        font-size: 20px;
     }
     
     .main-nav {
@@ -350,13 +362,15 @@
 @media (min-width : 1824px) {
         
     /*HEADER*/
-
+    .main-header {
+        height: 65px;
+    }
     .main-nav a {
-        font-size: 45px;
+        font-size: 25px;
     }
 
     .name a {
-        font-size: 55px;
+        font-size: 35px;
     }
 
     /*BANNER*/
