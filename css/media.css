@@ -1,6 +1,6 @@
 @import url(style.css);
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1224px) {
     
     
     .main-header,
@@ -181,7 +181,7 @@
 
                     .scroll-down {
                   position: absolute;
-                  top: 90%;
+                  top: 93%;
                   bottom: 20px;
                   left: 50%;
                   margin-left: -16px;
@@ -196,7 +196,7 @@
                   animation: bounce 2s infinite 2s;
                   -webkit-transition: all .2s ease-in;
                   transition: all .2s ease-in;
-                  transform: scale(1)
+                  transform: scale(1);
                 }
 
                 .scroll-down:before {
@@ -321,14 +321,150 @@
     
     /*CONTACT*/
     
+    .main-contact {
+        display: flex;
+    }
+    
     .main-contact .col {
-        margin-top: 40px;
-        margin-left: 13px;
-        margin-right: 13px;
+        margin: 30px;
         flex: 1 33%;
     }
     
+    #contact h2 {
+        font-size: 45px;
+    }
     
+    #contact p {
+        font-size: 25px;
+    }
+    
+    #contact img {
+        height: 50px;
+        width: 50px;
+    }
+    
+    #contact h3 {
+        font-size: 25px;
+    }
+    
+@media (min-width : 1824px) {
+        
+    /*HEADER*/
+
+    .main-nav a {
+        font-size: 45px;
+    }
+
+    .name a {
+        font-size: 55px;
+    }
+
+    /*BANNER*/
+
+    #main-banner {
+        height: 700px;
+    }
+        
+        /*---------------> SCROOL <-------------------*/
+        
+                .scroll-down {
+                    width: 60px;
+                    height: 60px;
+                }
+
+        /*----------------------------------------------*/
+        
+        
+    /*ABOUT*/
+
+    #about {
+        height: 950px;
+    }
+    
+    #about img {
+        height: 440px;
+        width: 340px;
+    }
+    
+    #about p {
+        font-size: 35px;
+    }
+        /*---------------> myPhoto <-------------------*/
+                .box-shadow {
+                    height: 540px;
+                    width: 413px;
+                }
+        
+        /*----------------------------------------------*/
+        
+    /*SKILLS*/
+    
+    #skills {
+        height: 950px; 
+    }
+    
+    #skills h2 {
+        font-size: 43px;
+    }
+    
+    #skills p {
+        font-size: 28px;
+    }
+    
+    /*PROJECTS*/
+    
+    #projects h2 {
+        font-size: 43px;
+    }
+    
+    #projects p {
+        font-size: 28px;
+    }
+    
+    /*CONTACT*/
+    
+    #contact {
+        height: 1010px;
+    }
+    
+    #contact h2 {
+        font-size: 60px;
+    }
+    
+    #contact h3 {
+        font-size: 40px;
+    }
+    
+    #contact p {
+        margin: 50px auto;
+        font-size: 35px;
+    }
+    
+    #contact img {
+        height: 70px;
+        width: 70px;
+    }
+    
+            /*---------------> Form <-------------------*/
+                    
+                #contact textarea {
+                    height: 250px;
+                }
+                
+                #contact input[type="text"],
+                #contact input[type="email"] {
+                    height: 80px;
+                }
+    
+                #contact input[type="text"],
+                #contact input[type="email"],
+                #contact textarea,
+                #contact button[type="submit"] {
+                    font-size: 25px;
+                }
+
+            /*----------------------------------------------*/
+}
     
     
     
