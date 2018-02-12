@@ -568,12 +568,12 @@
             /*---------------> Form <-------------------*/
                     
                 #contact textarea {
-                    height: 250px;
+                    height: 200px;
                 }
                 
                 #contact input[type="text"],
                 #contact input[type="email"] {
-                    height: 80px;
+                    height: 70px;
                 }
     
                 #contact input[type="text"],
