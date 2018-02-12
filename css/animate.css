@@ -1579,3 +1579,20 @@
 .slideOutUp {
   animation-name: slideOutUp;
 }
+
+
+
+
+
+
+
+/*BLANK*/
+
+    .blink { 
+  animation: blink-animation 1s ease 0s infinite alternate;
+}
+
+@keyframes blink-animation {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
