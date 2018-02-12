@@ -4,6 +4,4 @@ $(window).scroll(function() {
     } else {
         $('.main-header').removeClass("sticky")
     }
-    
-    
-})
+});

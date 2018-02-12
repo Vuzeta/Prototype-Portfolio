@@ -109,7 +109,7 @@
     /*HEADER*/
     
     .main-nav {
-        font-size: 28px;
+        font-size: 25px;
     }
     
     .main-nav li {
@@ -209,7 +209,11 @@
     
     /*CONTACT*/
     
-     .main-contact .col {
+    #contact {
+        height: 970px;
+    } 
+    
+    .main-contact .col {
         margin-top: 40px;
         margin-left: 13px;
         margin-right: 13px;
@@ -507,7 +511,7 @@
     }
         /*---------------> myPhoto <-------------------*/
                 .box-shadow {
-                    height: 540px;
+                    height: 515px;
                     width: 413px;
                 }
         
