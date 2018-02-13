@@ -13,16 +13,17 @@
     }
     
     .main-nav {
-        font-size: 20px;
+        font-size: 27px;
     }
     
     .main-header h1 {
-        font-size: 28px;
+        font-size: 48px;
         margin: 10px;
     }
     
     .main-nav li {
-        margin-top: 50px;
+        margin-top: 100px;
+        margin-left: 20px;
     }
     
     /*BANNER*/
@@ -38,11 +39,11 @@
     
     #main-banner h1 {
         margin-top: 100px;
-        font-size: 50px;
+        font-size: 70px;
     }
     
     #main-banner p {
-        font
+        font-size: 50px;
     }
     
     /*ABOUT*/
