@@ -534,6 +534,10 @@
         height: 950px; 
     }
     
+    #skills .col {
+        margin: 5px;
+    }
+    
     #skills h2 {
         font-size: 43px;
     }
