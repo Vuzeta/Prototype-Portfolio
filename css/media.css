@@ -79,6 +79,10 @@
         height: 2700px;
     }
     
+    #projects img {
+        height: 250px;
+    }
+    
     /*CONTACT*/
     
     #contact textarea[placeholder] {
