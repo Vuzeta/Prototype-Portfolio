@@ -228,6 +228,10 @@
         font-size: 23px;
     }
 
+    #projects img {
+        border-radius: 10px 10px 10px 10px;
+}
+
     /*CONTACT*/
 
     #contact h2 {
@@ -249,10 +253,6 @@
     #contact img {
         margin-left: 15px;
         border-radius: 50%;
-    }
-    #contact img:hover {
-        transition-duration: .3s;
-        border: 3px solid #E00B27;
     }
 
     /*-------------------------> FORM <-------------------------*/
