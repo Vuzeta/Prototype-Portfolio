@@ -77,7 +77,13 @@
     
     #projects {
         height: 2700px;
-    }                
+    }
+    
+    /*CONTACT*/
+    
+    #contact textarea[placeholder] {
+        padding-top: 15%;
+    }
 }
 
 
@@ -569,6 +575,10 @@
                     
                 #contact textarea {
                     height: 200px;
+                }
+    
+                #contact textarea[placeholder] {
+                    padding-top: 10%;
                 }
                 
                 #contact input[type="text"],

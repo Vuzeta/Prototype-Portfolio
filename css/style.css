@@ -271,6 +271,13 @@
 
             #contact button {
                 width: 330px;
+                height: 80px;
+            }
+                
+            #contact button p {
+                text-align: center;
+                font-size: 25px;
+                margin: 0;
             }
 
             #contact input[type="text"],
@@ -278,6 +285,11 @@
                 width: 330px;
                 height: 50px;
             }
+
+#contact textarea[placeholder] {
+    text-align: center;
+    padding-top: 25%;
+}
 
             #contact input[type="text"],
             #contact input[type="email"],
