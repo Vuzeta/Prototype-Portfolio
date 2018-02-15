@@ -2,7 +2,7 @@ if (document.documentElement.clientWidth >= 1824) {
 
     $(function() {
         $('.scroll-down').click (function() {
-            $('html, body').animate({scrollTop: $('#about .admission').offset().top - 126 }, 'slow');
+            $('html, body').animate({scrollTop: $('#about').offset().top - 126 }, 'slow');
             return false;
         });
     },3000);
