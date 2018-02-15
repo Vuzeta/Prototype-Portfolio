@@ -4,7 +4,7 @@
 
 /*SMARTFONS Landscape */
 
-@media  (min-width : 320px) and (max-width: 767px) and (orientation : portrait) {
+@media  (min-width : 320px) and (max-width: 767px) {
     
         .sticky {
         position: fixed;
@@ -30,7 +30,7 @@
     }
     
     .main-header h1 {
-        font-size: 40px;
+        font-size: 30px;
         text-align: center;
     }
     
@@ -56,60 +56,18 @@
         .bg-black {
         opacity: 0.65;
     }
-}
-
-
-
-
-@media (min-width : 321px) and (orientation : landscape) {
-
-    /*HEADER*/
-    
-    .main-header {
-        height: 360px;
-    }
-    
-    .main-nav {
-        font-size: 27px;
-    }
-    
-    .main-header h1 {
-        font-size: 48px;
-        margin: 10px;
-    }
-    
-    .main-nav li {
-        margin-top: 100px;
-        margin-left: 20px;
-    }
-    
-    /*BANNER*/
-    
-    .bg-black {
-        background-color: #222;
-        opacity: 1;
-    }
     
     #main-banner {
-        height: 260px;
+        height: auto;
+        margin: 150px auto;
     }
-    
-    #main-banner h1 {
-        margin-top: 100px;
-        font-size: 70px;
-    }
-    
-    #main-banner p {
-        font-size: 50px;
-    }
-    
-    /*ABOUT*/
     
     #about {
-        height: 800px;
-        
+        height: auto;
     }
-            /*---------------> myPhoto <-------------------*/
+    
+    
+                /*---------------> myPhoto <-------------------*/
                 .myphoto {
                     height: 270px;
                     width: 200px;
@@ -124,29 +82,9 @@
                 }
 
             /*----------------------------------------------*/
-    
-    /*SKILLS*/
-    
-    #skills {
-        height: 2600px;
-    }
-    
-    /*PROJECTS*/
-    
-    #projects {
-        height: 2700px;
-    }
-    
-    #projects img {
-        height: 250px;
-    }
-    
-    /*CONTACT*/
-    
-    #contact textarea[placeholder] {
-        padding-top: 15%;
-    }
 }
+
+
 
 
 /* iPads (portrait and landscape) ----------- */
