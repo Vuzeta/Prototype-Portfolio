@@ -12,7 +12,7 @@
         });
     } else if (document.documentElement.clientWidth >= 1224) {
         Array.prototype.forEach.call(section, function(e) {
-            sections[e.id] = e.offsetTop - 115;
+            sections[e.id] = e.offsetTop - 140;
         });
     } else if (document.documentElement.clientWidth >= 768) {
         Array.prototype.forEach.call(section, function(e) {
