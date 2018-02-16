@@ -45,6 +45,13 @@ if (document.documentElement.clientWidth >= 1824) {
                 scrollTop: $(linkHref).offset().top - 100
             });
             e.preventDefault();
+    } else if (document.documentElement.clientWidth >= 200) {       
+            var linkHref = $(this).attr('href');
+
+            $('html, body').animate({
+                scrollTop: $(linkHref).offset().top - 100
+            });
+            e.preventDefault();
     }
 });
 },3000);
