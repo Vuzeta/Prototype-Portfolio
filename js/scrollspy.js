@@ -6,9 +6,9 @@
     var i = 0;
 
 
-    if (document.documentElement.clientWidth >= 1824) {
+    if (document.documentElement.clientWidth >= 1824) // jeśli rozdzielczość {
         Array.prototype.forEach.call(section, function(e) {
-            sections[e.id] = e.offsetTop - 150;
+            sections[e.id] = e.offsetTop - 150; // ODDALENIE OD NAGŁOWKU
         });
     } else if (document.documentElement.clientWidth >= 1224) {
         Array.prototype.forEach.call(section, function(e) {
@@ -16,14 +16,12 @@
         });
     } else if (document.documentElement.clientWidth >= 768) {
         Array.prototype.forEach.call(section, function(e) {
-            sections[e.id] = e.offsetTop - 240;
+            sections[e.id] = e.offsetTop - 240;  
         });
     }
 
     window.onscroll = function() {
         var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-
-
 
         for (i in sections) {
             if (sections[i] <= scrollPosition) {
@@ -33,4 +31,5 @@
             }
         }
     };
-})();
+    )
+();

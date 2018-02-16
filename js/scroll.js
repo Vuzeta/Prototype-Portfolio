@@ -1,3 +1,5 @@
+//SCROLL ICON
+
 if (document.documentElement.clientWidth >= 1824) {
 
     $(function() {
@@ -15,43 +17,44 @@ if (document.documentElement.clientWidth >= 1824) {
         },3000);
     }
 
- $('document').ready(function() {
-    $('.slide-section').click(function (e) {
-        
-        if (document.documentElement.clientWidth >= 1824) {
-           
-            var linkHref = $(this).attr('href');
 
-            $('html, body').animate({
-                scrollTop: $(linkHref).offset().top - 65
-            });
-            e.preventDefault();
-            
-            
-        } else if (document.documentElement.clientWidth >= 1224) {
-            
-                       
-            var linkHref = $(this).attr('href');
+//SCROLL MENU
 
-            $('html, body').animate({
-                scrollTop: $(linkHref).offset().top - 50
-            });
-            e.preventDefault();
-            
-        } else if (document.documentElement.clientWidth >= 768) {       
-            var linkHref = $(this).attr('href');
+    $('document').ready(function() {
+        $('.slide-section').click(function (e) {
 
-            $('html, body').animate({
-                scrollTop: $(linkHref).offset().top - 100
-            });
-            e.preventDefault();
-    } else if (document.documentElement.clientWidth >= 200) {       
-            var linkHref = $(this).attr('href');
+            if (document.documentElement.clientWidth >= 1824) {
 
-            $('html, body').animate({
-                scrollTop: $(linkHref).offset().top - 100
-            });
-            e.preventDefault();
-    }
-});
-},3000);
+                var linkHref = $(this).attr('href');
+
+                $('html, body').animate({
+                    scrollTop: $(linkHref).offset().top - 65
+                });
+                e.preventDefault();
+
+            } else if (document.documentElement.clientWidth >= 1224) {
+
+                var linkHref = $(this).attr('href');
+
+                $('html, body').animate({
+                    scrollTop: $(linkHref).offset().top - 50
+                });
+                e.preventDefault();
+
+            } else if (document.documentElement.clientWidth >= 768) {       
+                var linkHref = $(this).attr('href');
+
+                $('html, body').animate({
+                    scrollTop: $(linkHref).offset().top - 100
+                });
+                e.preventDefault();
+            } else if (document.documentElement.clientWidth >= 200) {       
+                var linkHref = $(this).attr('href');
+
+                $('html, body').animate({
+                    scrollTop: $(linkHref).offset().top - 100
+                });
+                e.preventDefault();
+            }
+        });
+    },3000);
