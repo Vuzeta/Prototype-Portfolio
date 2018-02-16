@@ -580,10 +580,6 @@
                 #contact textarea {
                     height: 200px;
                 }
-    
-                #contact textarea[placeholder] {
-                    padding-top: 10%;
-                }
                 
                 #contact input[type="text"],
                 #contact input[type="email"] {
