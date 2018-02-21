@@ -4,45 +4,62 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="author" content="Mateusz Machnik">
+    <meta name="description" content="Portfolio Matuesz Machnik - Junior Front End Developer">
+    <meta name="description" content="Portfolio, Mateusz, Machnik, Front-End, Junior, Programowanie, Kontakt, Developer, Development" />
         <!--    LINKS-->
-    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Playfair+Display|Raleway:400i" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
-    <title>Front End Development - Mateusz Machnik</title>
+    <link rel="stylesheet" href="css/media.css">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <title>Junior Front-End Developer - Mateusz Machnik</title>
 </head>
 
 <body>
     
-
-        <header class="main-header wow zoomInDown" data-wow-delay=".2s">
-            <h1 class="name"><a href="#">Front-End Development</a></h1>
+<!--PRELOADER-->
+    <section id="ud_preloader">
+        <div id="ud_dots">
+            <p>Loading</p>
+            <div class="ud_dot" style=" animation-name:ud_preloader_1;"></div>
+            <div class="ud_dot" style=" animation-name:ud_preloader_2;"></div>
+            <div class="ud_dot" style=" animation-name:ud_preloader_3;"></div>
+            <div class="ud_dot" style=" animation-name:ud_preloader_4;"></div>
+        </div>
+        <div id="ud_bg_left" class="ud_pre_half"></div>
+        <div id="ud_bg_right" class="ud_pre_half"></div>
+    </section>
+    
+<!-- END PRELOADER-->    
+    
+<article id="ud_wrapper">
+  <header class="main-header wow fadeInDown">
+            <h1 class="name"><a>Junior Front-End Developer</a></h1>
+            <a class="burger-nav"></a>
             <ul class="main-nav">
-                <li><a href="#about" class="slide-section animated pulse">O Mnie</a></li>
-                <li><a href="#skills" class="slide-section animated pulse">Umiejętności</a></li>
-                <li><a href="#projects" class="slide-section animated pulse">Projekty</a></li>
-                <li><a href="#contact" class="slide-section animated pulse">Kontakt</a></li>
+                <li class="animated pulse"><a href="#about" class="slide-section active">O Mnie</a></li>
+                <li class="animated pulse"><a href="#skills" class="slide-section">Umiejętności</a></li>
+                <li class="animated pulse"><a href="#projects" class="slide-section">Projekty</a></li>
+                <li class="animated pulse"><a href="#contact" class="slide-section">Kontakt</a></li>
             </ul>
         </header>
 
         <section id="main-banner">
-            <div class="banner">
-                <div class="wow bounceInLeft" data-wow-delay="1s">
-                <h1>Mateusz Machnik</h1>
-                 <p>Front End Development</p>
-                </div>
-                <div id="section03" class="demo">
-                    <a href="#about" class="slide-section"><span></span>Scroll</a>
-                </div>
-            </div>
+                <h1 class="wow fadeIn" data-wow-delay="2s">Mateusz Machnik</h1>
+                 <p class="wow fadeIn" data-wow-delay="2.4s"><span class="blink"> { </span>Junior Front-End Developer<span class="blink"> }</span></p>
+            <a href="#about" class="scroll-down" address="true"></a>
     </section>
         
 
-    <section id="about">
+    <section id="about" class="section">
         <h1 class="admission">O mnie</h1>
         <div class="main-about">
             <div class="col primary"> 
-                <img src="img/photo.jpg" alt="myFace" class="myphoto">
+                <div class="box-shadow perspective">
+                <img src="img/photo.jpg" alt="myFace" class="myphoto wow bounceInLeft">
+                </div>
             </div> 
             <div class="col secondary">
                 <p>I have a natural curiosity for how things work, and how to make them work better, so I hope it is a good indication of a nascent Front-End Developer. I can get the same sense of satisfaction from making something in the virtual, as well as in the physical world. I am highly motivated to collaborate in teams to achieve shared goal, improve my programming skills and get my commercial experience.
@@ -51,58 +68,59 @@
                 <p>My name is Artur, I live in Poznań. I've always been around computers and <br>
                    I really like them. I've tried self-taught programming and some web development but never really got far with it. </p>
             </div>
+            
         </div>     
     </section>
         
         
-    <section id="skills">
+    <section id="skills" class="section">
         <h1 class="admission">Umiejętności</h1>
                 <div class="main-skills">
                 <div class="col wow fadeIn" data-wow-delay=".3s">
-                    <img src="img/html5.png" alt="html5" width="150" height="150">
-                    <h2>HTML</h2>
+                    <img src="img/html5.png" alt="html5" width="150" height="150" class="hvr-float">
+                    <h2 class="name">HTML</h2>
                     <p>Język wykorzystywany do tworzenia <br>
-                       i prezentowania stron internetowych www.</p>
+                       i prezentowania stron internetowych.</p>
                 </div>
                 <div class="col wow fadeIn" data-wow-delay="0.4s">
-                    <img src="img/css3.png" alt="css3" width="150" height="150">
-                    <h2>CSS3</h2>
+                    <img src="img/css3.png" alt="css3" width="150" height="150" class="hvr-float">
+                    <h2 class="name">CSS</h2>
                     <p>Kaskadowe arkusze stylów <br>
-                       (Cascading Style Sheets).</p>
+                       Cascading Style Sheets.</p>
                 </div>
                 <div class="col wow fadeIn" data-wow-delay="0.5s">
-                 <img src="img/js.png" alt="JavaScript" width="150" height="150">
-                    <h2>JavaScript</h2>
+                 <img src="img/js.png" alt="JavaScript" width="150" height="150" class="hvr-float">
+                    <h2 class="name">JavaScript</h2>
                     <p>Skryptowy język programowania,<br>
                        stworzony przez firmę Netscape.</p>
                 </div>
                 <div class="col wow fadeIn" data-wow-delay="0.6s">
-                    <img src="img/rwd.png" alt="rwd" width="150" height="150">
-                    <h2>RWD</h2>
+                    <img src="img/rwd.png" alt="rwd" width="150" height="150" class="hvr-float">
+                    <h2 class="name">RWD</h2>
                     <p>Technika projektowania strony <br>
                        responsywnych.</p>
                 </div>
                 <div class="col wow fadeIn" data-wow-delay="0.3s">
-                    <img src="img/Bootstrap.png" alt="bootstrap" width="150" height="150">
-                    <h2>Bootstrap</h2>
+                    <img src="img/Bootstrap.png" alt="bootstrap" width="150" height="150" class="hvr-float">
+                    <h2 class="name">Bootstrap</h2>
                     <p>Framework CSS, rozwijany przez<br>
                        programistów Twittera.</p>
                 </div>
                 <div class="col wow fadeIn" data-wow-delay="0.4s">
-                 <img src="img/jquery.png" alt="jQuery" width="150" height="150">
-                    <h2>jQuery</h2>
+                 <img src="img/jquery.png" alt="jQuery" width="150" height="150" class="hvr-float">
+                    <h2 class="name">jQuery</h2>
                     <p>Framework ułatwiającay korzystanie z <br>
                        JavaScriptu (w tym manipulację drzewem DOM).</p>
                 </div>
                 <div class="col wow fadeIn" data-wow-delay="0.5s">
-                    <img src="img/git.png" alt="git" width="150" height="150">
-                    <h2>Git</h2>
+                    <img src="img/git.png" alt="git" width="150" height="150" class="hvr-float">
+                    <h2 class="name">Git</h2>
                     <p>Rozproszony system kontroli wersji.<br>
                        W prosty sposób wporawdza zmiany w projekcie. </p>
                 </div>
                 <div class="col wow fadeIn" data-wow-delay="0.6s">
-                    <img src="img/sass.png" alt="sass" width="150" height="150">
-                    <h2>Sass</h2>
+                    <img src="img/sass.png" alt="sass" width="150" height="150" class="hvr-float">
+                    <h2 class="name">Sass</h2>
                     <p>Syntactically Awesome Stylesheets<br>
                        to rozszerzenie języka CSS.</p>
                 </div>
@@ -110,52 +128,104 @@
        </section>
         
         
-    <section id="projects">
+    <section id="projects" class="section">
         <h1 class="admission">Projekty</h1>
-        <div class="github">
+        <div class="main-projects">
+        <div class="col">
+            <a href="https://github.com/Vuzeta95/WarOfShip" target="_blank">
+                <img src="img/ship.png" alt="ship" width="300" height="300" class="hvr-pulse-shrink">
+            </a>
+        <h2 class="name">War of Ship</h2>
+            <p>Vanilla JS</p>
         </div>
+        <div class="col">
+            <a href="https://github.com/Vuzeta95/Dice-Ver.2-with-Treehouse-" target="_blank">
+                <img src="img/dice1.png" alt="ship" width="300" height="300" class="hvr-pulse-shrink">
+            </a>
+        <h2 class="name">App Dice ver. 2</h2>
+            <p>Nauka JavaScript</p>
+        </div>
+         <div class="col">
+            <a href="https://github.com/Vuzeta95/Learning-Bootstrap4" target="_blank">
+                <img src="img/learn-bootstrap.png" alt="ship" width="300" height="300" class="hvr-pulse-shrink">
+            </a>
+        <h2 class="name">Nauka</h2>
+            <p>Nauka tworzenia stron z wykorzystaniem Bootstrap</p>
+        </div>
+        <div class="col">
+            <a href="https://github.com/Vuzeta95/App-Invite-Party" target="_blank">
+                <img src="img/invite.png" alt="ship" width="300" height="300" class="hvr-pulse-shrink">
+            </a>
+        <h2 class="name">App Invite Party</h2>
+            <p>Nauka budowania aplikacji JavaScript</p>
+        </div>
+        <div class="col">
+            <a href="https://github.com/Vuzeta95/Project-PlayList" target="_blank">
+                <img src="img/playlist.png" alt="ship" width="300" height="300" class="hvr-pulse-shrink">
+            </a>
+        <h2 class="name">App PlayList</h2>
+            <p>Nauka obiektowego tworzenia aplikacji </p>
+        </div>
+        <div class="col">
+            <a href="https://github.com/Vuzeta95" target="_blank">
+                <img src="img/github.png" alt="ship" width="300" height="300" class="hvr-pulse-shrink">
+            </a>
+        <h2 class="name github">Zapraszam na Mój GitHub</h2>
+            <p>Zobaczysz na nim inne projekty</p>
+        </div>
+            </div>
         
     </section>
     
         
-    <section id="contact">
+    <section id="contact" class="section">
         <h1 class="admission">Kontakt</h1>
         <div class="main-contact">
-            <div class="send">
-            <h2>Mateusz Machnik</h2>
-                        <p>tel: 506 354 088</p>
-                        <p>e-mail:<a href="mailto:machnio95@o2.pl"> machnio95@o2.pl</a></p>
-                        <a href="https://www.facebook.com/mateusz.machnik.1?ref=bookmarks"><img src="img/fb.png" alt="Facebook" width="50" height="50" class="animated flip"></a>
-                        <a href="https://www.linkedin.com/in/mateusz-machnik-7693a9157/"><img src="img/linkedin.png" alt="LinkedIn" width="50" height="50" class="animated flip"></a>
-                        <a href="skype:ciach095?add"><img src="img/skype.png" alt="Skype" width="50" height="50" class="animated flip"></a>
-            </div>
-             <div class="send">
-                 <form target="_blank" action="https://formspree.io/machnio95@o2.pl" method="post">
-                     <h3>Napisz do Mnie</h3>
-                     <h4>Najcześciej odpisuje w ciągu 24 godzin.</h4>
+             <div class="col second">
+                 <form target="_blank" action="https://formspree.io/mateusz.machnik95@gmail.com" method="post">
+                     <h2>Napisz do Mnie</h2>
+                     <h3>Najcześciej odpisuje w ciągu 24 godzin.</h3>
                      <fieldset>
-                         <input placeholder="Twoje imię" type="text" tabindex="1" required>
+                         <input placeholder="Twoje imię" type="text" tabindex="1" required class="animated pulse">
                      </fieldset>
                      <fieldset>
-                         <input placeholder="Twój Adres E-mail" type="email" tabindex="2" required>
+                         <input placeholder="Twój Adres E-mail" type="email" tabindex="2" required class="animated pulse">
                      </fieldset>
                      <fieldset>
-                         <textarea placeholder="Wiadomość" tabindex="5" required></textarea>
+                         <textarea placeholder="Wiadomość" tabindex="5" required class="animated pulse"></textarea>
                      </fieldset>
                      <fieldset>
-                         <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Wyślij</button>
+                         <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" class="animated pulse"><p>Wyślij</p></button>
                      </fieldset>
                  </form>
+            </div>
+                        <div class="col first">
+            <h2 class="name">Mateusz Machnik</h2>
+                        <p >tel: 506 354 088</p>
+                        <p>e-mail: mateusz.machnik95@gmail.com</p>
+                        <a href="https://www.facebook.com/mateusz.machnik.1?ref=bookmarks" target="_blank"><img src="img/fb1.png" alt="Facebook" width="50" height="50" class="hvr-grow"></a>
+                        <a href="https://www.linkedin.com/in/mateusz-machnik-566468159/" target="_blank"><img src="img/linkedin1.png" alt="LinkedIn" width="50" height="50" class="hvr-grow"></a>
             </div>
         </div>
     </section>
         
     <footer>
-        <p>© Copyright 2018 - Vuzeta </p>
+        <p>&copy; Copyright 2018 - Vuzeta </p>
     </footer>
+    </article>
+    
+    
+<video autoplay loop id="video-background">
+  <source src="img/video.mp4" type="video/mp4">
+</video>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/scroll.js"></script>
+<script src="js/scrollspy.js"></script>
+<script src="js/sticky.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/preloader.js"></script>
 <script src="js/wow.min.js"></script>
+<script src="js/menu.js"></script>
 <script> new WOW().init(); </script>
 </body>
 </html>
