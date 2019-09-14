@@ -1,7 +1,5 @@
 # Prototype-Portfolio
 
-# Portfolio
-
 ### Description 
 
 My first built portfolio. I could remove it is true, but I am happy to look at it from time to time :)
